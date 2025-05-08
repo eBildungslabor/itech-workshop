@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <title>Radikale Gegenwart</title>
     <link rel="stylesheet" href="css/pico.min.css">
+    <script>
+        function copyPrompt() {
+            const prompt = `Deine Aufgabe ist es, mich bei der Erschließung des Konzepts: 'Radikale Gegenwart' aus Perspektive des Lernens zu unterstützen. Ich kenne schon diese Definition: Radikale Gegenwart erleben bedeutet, im Lernprozess ganz im aktuellen Moment verankert zu sein. Die Aufmerksamkeit richtet sich auf das unmittelbare Erleben, auf das, was man gerade tut, wahrnimmt oder erkundet – ohne dass ein späteres Ergebnis im Vordergrund steht. Ich nutze das Gespräch mit dir im Kontext eines Workshops mit wenig Zeit. Wichtig sind also kurze und prägnante Antworten von dir und dass du mir hilfst, meine eigenen Erfahrungen und Ideen beim Lernen mit diesem Konzept zu verknüpfen. Ich habe zu wenig Zeit, um dir immer ausführlich zu antworten. Du kannst mir also auch anbieten, dass du nach einem ersten Vorschlag immer direkt einen nächsten Vorschlag zur Erschließung machst oder mir bei Fragen hilfst. Hilfreiche Ansätze zur Erschließung könnten sein: mögliche Gegenteile oder Synonyme zu dem Konzept finden, ein positives oder negatives Fallbeispiel zu skizzieren oder die Rolle von KI zu dem Konzept zu reflektieren. Starte damit, dass du mir sagst, dass du mir Schritt für Schritt bei der Erschließung des Konzepts der radikalen Gegenwart helfen wirst und beginne dann direkt.`;
+            navigator.clipboard.writeText(prompt).then(() => {
+                alert("Prompt wurde kopiert! Du kannst ihn jetzt in ein Sprachmodell einfügen.");
+            });
+        }
+    </script>
 </head>
 <body>
     <main class="container">
         <h1>Ausgewählter Begriff: Radikale Gegenwart</h1>
-<p>
-    Radikale Gegenwart erleben bedeutet, im Lernprozess ganz im aktuellen Moment verankert zu sein. Die Aufmerksamkeit richtet sich auf das unmittelbare Erleben, auf das, was man gerade tut, wahrnimmt oder erkundet – ohne dass ein späteres Ergebnis im Vordergrund steht.
-</p>
+        <p>
+            Radikale Gegenwart erleben bedeutet, im Lernprozess ganz im aktuellen Moment verankert zu sein. Die Aufmerksamkeit richtet sich auf das unmittelbare Erleben, auf das, was man gerade tut, wahrnimmt oder erkundet – ohne dass ein späteres Ergebnis im Vordergrund steht.
+        </p>
 
-        <p><a href="index.html"><- Zurück zum Überblick</a>.</p>
+        <h2>Erarbeitung mit einem Sprachmodell</h2>
+        <p>
+            Du kannst dir das Konzept in Interaktion mit einem Sprachmodell erschließen. Kopiere dir dazu über den folgenden Button einen vorbereiteten Prompt und gib ihn bei einem KI-Sprachmodell ein.  
+            (<a href="https://duck.ai" target="_blank">Ohne Registrierung zugängliche KI-Modelle findest du hier</a>.)
+        </p>
+        <button onclick="copyPrompt()">Prompt kopieren und mit KI starten</button>
+
+        <h2>Erarbeitung ohne KI-Unterstützung</h2>
+        <p>Alternativ kannst du dir das Konzept auch mithilfe dieser Reflexionsfragen erschließen:</p>
+        <ul>
+            <li><strong>Einordnung:</strong> Welche möglichen Synonyme gibt es? Welche Antonyme (Gegenbegriffe) existieren? Welche verwandten Konzepte lassen sich finden?</li>
+            <li><strong>Umsetzung:</strong> Überlege dir ein möglichst konkretes Beispiel, wie der Begriff beim Lernen angewendet wird. Wie könnte das Gegenteil aussehen?</li>
+            <li><strong>Transfer:</strong> Warum ist der Begriff für Bildung im digitalen Zeitalter relevant?</li>
+        </ul>
+
+        <p><a href="index.html">&larr; Zurück zum Überblick</a></p>
     </main>
-    
+
     <footer class="container">
         <small>Konzipiert und erstellt von Nele aus dem <a href="https://ebildungslabor.de">eBildungslabor</a> •
         Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></small>
     </footer>
 </body>
 </html>
+
 
