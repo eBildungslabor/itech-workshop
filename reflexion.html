@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="css/pico.min.css">
     <script>
         function copyPrompt() {
-            const prompt = `Deine Aufgabe ist es, mich bei der Erschließung des Konzepts: 'Reflexion' aus Perspektive des Lernens zu unterstützen. Ich kenne schon diese Definition: Reflexion ermöglichen heißt, Raum dafür zu schaffen, über gemachte Erfahrungen und das erfolgte Lernen nachzudenken. Lernende ordnen ihr Erlebtes und Gelerntes, prüfen Bedeutungen und gewinnen daraus Einsichten, die ihr weiteres Lernen bewusst beeinflussen. Ich nutze das Gespräch mit dir im Kontext eines Workshops mit wenig Zeit. Wichtig sind also kurze und prägnante Antworten von dir und dass du mir hilfst, meine eigenen Erfahrungen und Ideen beim Lernen mit diesem Konzept zu verknüpfen. Ich habe zu wenig Zeit, um dir immer ausführlich zu antworten. Du kannst mir also auch anbieten, dass du nach einem ersten Vorschlag immer direkt einen nächsten Vorschlag zur Erschließung machst oder mir bei Fragen hilfst. Hilfreiche Ansätze zur Erschließung könnten sein: mögliche Gegenteile oder Synonyme zu dem Konzept finden, ein positives oder negatives Fallbeispiel zu skizzieren oder die Rolle von KI zu dem Konzept zu reflektieren. Starte damit, dass du mir sagst, dass du mir Schritt für Schritt bei der Erschließung des Konzepts Reflexion helfen wirst und beginne dann direkt.`;
+           const prompt = `Ich bin in einem Workshop und möchte das Konzept „Reflexion“ im Lernen besser verstehen. Ich kenne bereits diese Definition:
+
+„Reflexion ermöglichen heißt, Raum dafür zu schaffen, über gemachte Erfahrungen und das erfolgte Lernen nachzudenken. Lernende ordnen ihr Erlebtes und Gelerntes, prüfen Bedeutungen und gewinnen daraus Einsichten, die ihr weiteres Lernen bewusst beeinflussen.“
+
+Bitte erkläre mir Reflexion in einfachen Worten (max. 3 Sätze) und gib mir ein kurzes Beispiel. Frage mich dann, ob ich direkt Nachfragen habe oder ob du mir helfen sollst, das Konzept weiter zu erschließen. Beantworte dann entweder meine Fragen oder hilf mir mit je einer kurzen Frage oder einem Denkimpuls, das Konzept weiter zu erschließen – zum Beispiel durch weitere positive oder negative Fallbeispiele, durch ein mögliches Gegenteil oder Gegenbegriffe oder auch Synonyme, eine Anwendungssituation, eine eigene Erfahrung oder die Rolle von KI bei dem Konzept.
+
+Wichtig: Nach jeder Frage oder jedem Denkimpuls sollst du mich daran erinnern, dass ich entweder antworten oder einfach „Weiter“ oder „Gib mir deine Einschätzung“ schreiben kann, damit du fortfährst. Bei „Weiter“ gibst du mir die nächste Frage oder den nächsten Denkimpuls. Bei „Gib mir deine Einschätzung“ beantwortest du die zuvor gestellte Frage oder den Denkimpuls aus deiner Perspektive. Dann kannst du wieder fragen, ob es weitergehen soll. Achte durchgängig auf kurze, einfach formulierte und prägnante Antworten.`;
+
             navigator.clipboard.writeText(prompt).then(() => {
                 alert("Prompt wurde kopiert! Du kannst ihn jetzt in ein Sprachmodell einfügen.");
             });
