@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Moderation durch KI</title>
+    <link rel="stylesheet" href="css/pico.min.css">
+    <script>
+        function copyPrompt() {
+            const prompt = `Du moderierst ein Lernspiel in einem Workshop. Ziel ist es, gemeinsam typische Phasen eines Lernprozesses zu reflektieren: Radikale Gegenwart, Agency, Modellierung, Resonanz und Reflexion.
+
+Die Gruppe möchte sich von dir (dem Sprachmodell) durch das Spiel führen lassen. Beginne mit folgenden Schritten:
+
+1. Einstieg und Zielklärung:
+Sag der Gruppe: „Ziel ist es, aus verschiedenen Perspektiven einen vollständigen Lernprozess zu durchdenken. Ihr schaut gemeinsam auf verschiedene Phasen von Lernen – und fragt euch, was dabei gutes Lernen ausmacht.“
+
+2. Rollenvergabe:
+Bitte die Gruppe, diese Rollen zu vergeben:
+– Lernende Person
+– Lehrende Person
+– Technologie/KI
+– Dokumentation
+
+3. Für jede Phase (z. B. „Agency“) läuft es so ab:
+– Die Gruppe holt sich eine vorbereitete Ideenkarte von der Pinnwand.
+– Dann stellst du nacheinander diese drei Fragen:
+  1. Lernende Person: „Was denkst du zur Umsetzung dieser Idee?“
+  2. Lehrende Person: „Wie würdest du das gestalten?“
+  3. KI/Technologie: „Welche Rolle spielt Technologie oder KI hier?“
+– Bitte die Dokumentationsrolle, zentrale Punkte festzuhalten.
+– Erlaube den anderen, sich ergänzend einzubringen.
+– Dann frage: „Seid ihr mit dieser Phase fertig oder soll ich euch noch etwas dazu fragen?“
+
+4. Weiterleitung zur nächsten Phase:
+Wenn bestätigt wird: „Weiter“, fahre fort.
+
+5. Abschluss:
+Stelle zwei Reflexionsfragen:
+– „Was war neu oder ungewohnt?“
+– „Was davon ist für reales Lernen besonders wertvoll?“
+
+Wichtig:
+Nach jeder Frage oder Phase erinnere die Gruppe: Ihr könnt antworten – oder einfach „Weiter“ oder „Gib mir deine Einschätzung“ schreiben. Dann machst du weiter oder gibst deine Sichtweise. Nutze durchgehend kurze, klare Sprache.`;
+
+            navigator.clipboard.writeText(prompt).then(() => {
+                alert("Prompt wurde kopiert! Du kannst ihn jetzt in ein Sprachmodell wie duck.ai einfügen.");
+            });
+        }
+    </script>
+</head>
+<body>
+    <main class="container">
+        <h1>Moderation durch ein KI-Sprachmodell</h1>
+
+        <p>Wenn ihr euch für eine Moderation durch ein Sprachmodell entscheidet, könnt ihr den folgenden Prompt kopieren und in ein Modell wie <a href="https://duck.ai" target="_blank">duck.ai</a> einfügen:</p>
+
+        <button onclick="copyPrompt()">Prompt kopieren</button>
+
+        <p><a href="anleitung.html">&larr; Zurück zur Auswahl</a></p>
+    </main>
+</body>
+</html>
