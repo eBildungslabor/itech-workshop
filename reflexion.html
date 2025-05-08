@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <title>Reflexion</title>
     <link rel="stylesheet" href="css/pico.min.css">
+    <script>
+        function copyPrompt() {
+            const prompt = `Deine Aufgabe ist es, mich bei der Erschließung des Konzepts: 'Reflexion' aus Perspektive des Lernens zu unterstützen. Ich kenne schon diese Definition: Reflexion ermöglichen heißt, Raum dafür zu schaffen, über gemachte Erfahrungen und das erfolgte Lernen nachzudenken. Lernende ordnen ihr Erlebtes und Gelerntes, prüfen Bedeutungen und gewinnen daraus Einsichten, die ihr weiteres Lernen bewusst beeinflussen. Ich nutze das Gespräch mit dir im Kontext eines Workshops mit wenig Zeit. Wichtig sind also kurze und prägnante Antworten von dir und dass du mir hilfst, meine eigenen Erfahrungen und Ideen beim Lernen mit diesem Konzept zu verknüpfen. Ich habe zu wenig Zeit, um dir immer ausführlich zu antworten. Du kannst mir also auch anbieten, dass du nach einem ersten Vorschlag immer direkt einen nächsten Vorschlag zur Erschließung machst oder mir bei Fragen hilfst. Hilfreiche Ansätze zur Erschließung könnten sein: mögliche Gegenteile oder Synonyme zu dem Konzept finden, ein positives oder negatives Fallbeispiel zu skizzieren oder die Rolle von KI zu dem Konzept zu reflektieren. Starte damit, dass du mir sagst, dass du mir Schritt für Schritt bei der Erschließung des Konzepts Reflexion helfen wirst und beginne dann direkt.`;
+            navigator.clipboard.writeText(prompt).then(() => {
+                alert("Prompt wurde kopiert! Du kannst ihn jetzt in ein Sprachmodell einfügen.");
+            });
+        }
+    </script>
 </head>
 <body>
     <main class="container">
         <h1>Ausgewählter Begriff: Reflexion</h1>
-<p>
-Reflexion ermöglichen heißt, Raum dafür zu schaffen, über gemachte Erfahrungen und das erfolgte Lernen nachzudenken. Lernende ordnen ihr Erlebtes und Gelerntes, prüfen Bedeutungen und gewinnen daraus Einsichten, die ihr weiteres Lernen bewusst beeinflussen.
-</p>
+        <p>
+        Reflexion ermöglichen heißt, Raum dafür zu schaffen, über gemachte Erfahrungen und das erfolgte Lernen nachzudenken. Lernende ordnen ihr Erlebtes und Gelerntes, prüfen Bedeutungen und gewinnen daraus Einsichten, die ihr weiteres Lernen bewusst beeinflussen.
+        </p>
 
-        <p><a href="index.html"><- Zurück zum Überblick</a>.</p>
+        <h2>Konzept mit einem Sprachmodell erschließen</h2>
+        <p>
+            Du kannst dir das Konzept in Interaktion mit einem Sprachmodell erschließen.  
+            Klicke einfach auf den folgenden Button – der vorbereitete Prompt wird automatisch in deine Zwischenablage kopiert.  
+            <strong>Du musst ihn nicht vorher lesen – du kannst ihn direkt einfügen und absenden.</strong>
+        </p>
+        <button onclick="copyPrompt()">Prompt kopieren und mit KI starten</button>
+        <p>
+            Ein frei zugängliches KI-Sprachmodell findest du z. B. unter <a href="https://duck.ai" target="_blank">duck.ai</a>.
+        </p>
+
+        <h2>Konzept ohne KI – mit Reflexionsfragen erschließen</h2>
+        <p>Alternativ kannst du die folgenden Fragen nutzen, um dich dem Konzept selbstständig zu nähern:</p>
+        <ul>
+            <li><strong>Einordnung:</strong> Welche Synonyme, Gegenteile oder verwandte Begriffe fallen dir ein?</li>
+            <li><strong>Umsetzung:</strong> Fällt dir ein konkretes Beispiel ein, wie Reflexion beim Lernen sichtbar wird? Und ein Gegenbeispiel?</li>
+            <li><strong>Transfer:</strong> Warum ist dieses Konzept für Bildung im digitalen Zeitalter relevant?</li>
+        </ul>
+
+        <p><a href="index.html">&larr; Zurück zum Überblick</a></p>
     </main>
-    
+
     <footer class="container">
         <small>Konzipiert und erstellt von Nele aus dem <a href="https://ebildungslabor.de">eBildungslabor</a> •
         Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></small>
     </footer>
 </body>
 </html>
+
